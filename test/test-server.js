@@ -7,6 +7,7 @@ chai.use(chaiHttp);
 
 describe('Homepage', function() {
   it('should display the homepage at / GET', function(done) {
+    console.log('testing')
     chai.request(server)
       .get('/')
       .end(function(err, res){
